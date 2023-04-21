@@ -2,7 +2,7 @@
 
 /**
  * main - prints hello world
- * return : always 0
+ * return: 0
  */
 
 int main(void)
