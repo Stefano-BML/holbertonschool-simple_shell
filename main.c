@@ -156,11 +156,6 @@ int execute(char **args)
 		/* Parent process */
 		wait(&status);
 	}
-<<<<<<< HEAD
-	
-	return (0);
-=======
 
-	return (1);
->>>>>>> 318ea7c5c3e660bdd9f98fd391fff10e07e8fc1b
+	return (0);
 }
