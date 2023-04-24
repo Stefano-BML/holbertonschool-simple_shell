@@ -12,9 +12,9 @@ extern char **environ;
 
 int main(int argc, char **argv)
 {
-        char *line = NULL;
-        char **args = NULL;
-        int status;
+	char *line = NULL;
+	char **args = NULL;
+	int status;
 	(void)argc;
 	(void)argv;
 
