@@ -80,18 +80,6 @@ check out :eyes:
 $ echo "echo $OLDPWD" | ./hsh
 /home/vagrant/holberton/printf
 ```
-
-### PATH
-
-The shell searches for commands in a list of directories separated by colons. A null directory name in the path is indicated by two adjacent colons, an initial colon, or a trailing colon, and represents the current directory.
-
-check out :eyes:
-
-```
-$ echo "echo $OLDPWD" | ./hsh
-/home/vagrant/holberton/printf
-```
-
 ### PATH
 
 The shell searches for commands in a list of directories separated by colons. A null directory name in the path is indicated by two adjacent colons, an initial colon, or a trailing colon, and represents the current directory.
