@@ -1,7 +1,5 @@
 #include "shell.h"
 
-extern char **environ;
-
 /**
  * main - Entry point for the shell programs
  * @argc: Number of arguments passed to the program
