@@ -145,6 +145,6 @@ int execute(char **args)
 		/* Parent process */
 		wait(&status);
 	}
-	
+
 	return (1);
 }
