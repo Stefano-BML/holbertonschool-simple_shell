@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
 
 extern char **environ;
 
@@ -14,5 +15,7 @@ void prompt(void);
 char *read_line(void);
 char **split_line(char *line);
 int execute(char **args);
+char *get_location(char *command);
+void execmd(char **argv);
 
 #endif
