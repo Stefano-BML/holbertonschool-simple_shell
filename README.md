@@ -93,8 +93,6 @@ $ echo "echo $PATH" | ./hsh
 
 ## Command Execution :white_check_mark:
 
-## Command Execution :white_check_mark:
-
 After receiving a command, **hsh** tokenizes it into words using `" "` as a delimiter. The first word is considered the command and all remaining words are considered arguments to that command. **hsh** then proceeds with the following actions:
 
 + If the first character of the command is neither a slash `(\)` nor dot `(.)`, the shell searches for it in the list of shell builtins. If there exists a builtin by that name, the builtin is invoked.
