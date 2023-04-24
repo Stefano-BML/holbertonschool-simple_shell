@@ -3,7 +3,7 @@
 extern char **environ;
 
 /**
- * main - Entry point for the shell program
+ * main - Entry point for the shell programs
  * @argc: Number of arguments passed to the program
  * @argv: Array of arguments passed to the program
  *
