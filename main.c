@@ -20,7 +20,6 @@ int main(int argc, char **argv)
 
 	if (isatty(STDIN_FILENO))
 	{
-		/* Non-Interactive mode */
 		do {
 			prompt();
 			line = read_line();
@@ -33,7 +32,6 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		/* interactive mode */
 		do {
 			line = read_line();
 			args = split_line(line);
