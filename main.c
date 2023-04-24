@@ -146,5 +146,5 @@ int execute(char **args)
 		wait(&status);
 	}
 	
-	return (1);
+	return (0);
 }
