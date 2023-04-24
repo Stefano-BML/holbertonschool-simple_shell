@@ -1,7 +1,5 @@
 #include "shell.h"
 
-extern char **environ;
-
 /**
  * main - Entry point for the shell programs
  * @argc: Number of arguments passed to the program
@@ -12,9 +10,9 @@ extern char **environ;
 
 int main(int argc, char **argv)
 {
-        char *line = NULL;
-        char **args = NULL;
-        int status;
+	char *line = NULL;
+	char **args = NULL;
+	int status;
 	(void)argc;
 	(void)argv;
 
@@ -25,7 +23,7 @@ int main(int argc, char **argv)
 			line = read_line();
 			args = split_line(line);
 			status = execute(args);
-			
+
 			free(line);
 			free(args);
 		} while (status);
@@ -65,8 +63,10 @@ char *read_line(void)
 	char *line = NULL;
 	size_t bufsize = 0;
 
-	if (getline(&line, &bufsize, stdin) == -1) {
-		if (!isatty(STDIN_FILENO)){
+	if (getline(&line, &bufsize, stdin) == -1)
+	{
+		if (!isatty(STDIN_FILENO))
+		{
 			exit(EXIT_FAILURE);
 		}
 		perror("read_line");
@@ -89,7 +89,8 @@ char **split_line(char *line)
 	int i = 0;
 
 	args = malloc(sizeof(char *) * 2);
-	if (args == NULL) {
+	if (args == NULL)
+	{
 		perror("split_line");
 		exit(EXIT_FAILURE);
 	}
@@ -97,10 +98,12 @@ char **split_line(char *line)
 	token = strtok(line, " \t\n\r");
 	args[i] = token;
 
-	while (token != NULL) {
+	while (token != NULL)
+	{
 		i++;
 		args = realloc(args, sizeof(char *) * (i + 2));
-		if (args == NULL) {
+		if (args == NULL)
+		{
 			perror("split_line");
 			exit(EXIT_FAILURE);
 		}
@@ -123,28 +126,41 @@ int execute(char **args)
 	pid_t pid;
 	int status;
 
-	if (args[0] == NULL) {
+	if (args[0] == NULL)
+	{
 		return (1);
 	}
 
-	if (strcmp(args[0], "exit") == 0) {
+	if (strcmp(args[0], "exit") == 0)
+	{
 		return (0);
 	}
 
 	pid = fork();
-	if (pid == -1) {
+	if (pid == -1)
+	{
 		perror("execute");
 		exit(EXIT_FAILURE);
-	} else if (pid == 0) {
+	}
+	else if (pid == 0)
+	{
 		/* Child process */
-		if (execve(args[0], args, environ) == -1) {
+		if (execve(args[0], args, environ) == -1)
+		{
 			perror("execute");
 			exit(EXIT_FAILURE);
 		}
-	} else {
+	}
+	else
+	{
 		/* Parent process */
 		wait(&status);
 	}
+<<<<<<< HEAD
 	
 	return (0);
+=======
+
+	return (1);
+>>>>>>> 318ea7c5c3e660bdd9f98fd391fff10e07e8fc1b
 }
