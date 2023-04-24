@@ -9,31 +9,30 @@ extern char **environ;
  *
  * Return: Always 0
  */
+
 int main(int argc, char **argv)
 {
-	char *line = NULL;
-	char **args = NULL;
-	int status;
+        char *line = NULL;
+        char **args = NULL;
+        int status;
+	(void)argc;
+	(void)argv;
 
-	if (argc == 1 || !isatty(STDIN_FILENO))
+	if (isatty(STDIN_FILENO))
 	{
-		/* Non-Interactive mode */
 		do {
 			prompt();
-			line = argv[1];
 			line = read_line();
 			args = split_line(line);
 			status = execute(args);
-
+			
 			free(line);
 			free(args);
 		} while (status);
 	}
 	else
 	{
-		/* interactive mode */
 		do {
-			prompt();
 			line = read_line();
 			args = split_line(line);
 			status = execute(args);
@@ -45,6 +44,7 @@ int main(int argc, char **argv)
 
 	return (0);
 }
+
 
 /**
  * prompt - Prints a prompt for the user
