@@ -67,6 +67,7 @@ char *read_line(void)
 	{
 		if (!isatty(STDIN_FILENO))
 		{
+			free(line);
 			exit(EXIT_SUCCESS);
 		}
 		perror("read_line");
