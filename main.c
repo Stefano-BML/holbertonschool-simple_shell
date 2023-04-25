@@ -70,7 +70,7 @@ char *read_line(void)
 			exit(EXIT_FAILURE);
 		}
 		perror("read_line");
-		exit(EXIT_FAILURE);
+		return (NULL);
 	}
 
 	return (line);
@@ -87,12 +87,13 @@ char **split_line(char *line)
 	char **args = NULL;
 	char *token = NULL;
 	int i = 0;
+	int size = 2;
 
-	args = malloc(sizeof(char *) * 2);
+	args = malloc(sizeof(char *) * size);
 	if (args == NULL)
 	{
 		perror("split_line");
-		exit(EXIT_FAILURE);
+		return (NULL);
 	}
 
 	token = strtok(line, " \t\n\r");
@@ -101,17 +102,21 @@ char **split_line(char *line)
 	while (token != NULL)
 	{
 		i++;
-		args = realloc(args, sizeof(char *) * (i + 2));
-		if (args == NULL)
+		if (i >= size)
 		{
-			perror("split_line");
-			exit(EXIT_FAILURE);
+			args = realloc(args, sizeof(char *) * (i + 2));
+			if (args == NULL)
+			{
+				perror("split_line");
+				return (NULL);
+			}
 		}
 
 		token = strtok(NULL, " \t\n\r");
 		args[i] = token;
+		
 	}
-
+	args[i] = NULL;
 	return (args);
 }
 
@@ -140,7 +145,7 @@ int execute(char **args)
 	if (pid == -1)
 	{
 		perror("execute");
-		exit(EXIT_FAILURE);
+		return (0);
 	}
 	else if (pid == 0)
 	{
@@ -148,7 +153,7 @@ int execute(char **args)
 		if (execve(args[0], args, environ) == -1)
 		{
 			perror("execute");
-			exit(EXIT_FAILURE);
+			return (0);
 		}
 	}
 	else
@@ -157,5 +162,5 @@ int execute(char **args)
 		wait(&status);
 	}
 
-	return (0);
+	return (1);
 }
