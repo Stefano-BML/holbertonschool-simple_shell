@@ -115,7 +115,7 @@ char **split_line(char *line)
 
 		token = strtok(NULL, " \t\n\r");
 		args[i] = token;
-		
+
 	}
 	args[i] = NULL;
 	return (args);
