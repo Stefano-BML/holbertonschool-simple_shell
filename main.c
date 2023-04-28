@@ -1,11 +1,11 @@
 #include "shell.h"
 
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 char **pathArr;
 int ret_val = 0;
 int hist = 0;
 char *pName;
-=======
+/*=======*/
 /**
  * main - Entry point for the shell programs
  * @argc: Number of arguments passed to the program
