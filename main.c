@@ -126,7 +126,7 @@ char **split_line(char *line)
 	args[i] = NULL;
 	return (args);
 }
->>>>>>> 5ea6b927a6fc6c8f35e8b4f4a75b201891ca5497
+/*>>>>>>> 5ea6b927a6fc6c8f35e8b4f4a75b201891ca5497*/
 
 /**
  * main - Entry point for ghost
