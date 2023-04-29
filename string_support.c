@@ -7,7 +7,7 @@ int _strncmp(char *s1, char *s2, int n);
 int _strcmp(char *s1, char *s2);
 
 /**
- * *_strcat - meows 2 strings together
+ * *_strcat - function that meows 2 strings together
  * @dest: where big string goes and other smol string comes
  * @src: smol string input
  * Return: big string
@@ -66,7 +66,7 @@ int _strlen(char *s)
 }
 
 /**
- * _strncmp - compares strings up to n chars
+ * _strncmp - function that compares strings up to n chars
  * @s1: first string
  * @s2: second string
  * @n: num of chars to compare
@@ -93,7 +93,7 @@ int _strncmp(char *s1, char *s2, int n)
 }
 
 /**
- * _strcmp - compares strings ASCII values
+ * _strcmp - function that compares strings ASCII values
  * @s1: first string
  * @s2: second string
  * Return: first dif
