@@ -7,7 +7,7 @@ int cleanstr(char *line);
 int num_len(int num);
 
 /**
- * get_input - supplies approp. delims for command array
+ * get_input - A function that supplies approp. delims for command array
  * @input: user input to be tokenized
  * Return: array of strings cont. command and args
  */
@@ -21,7 +21,7 @@ char **get_input(char *input)
 }
 
 /**
- * _itoa - Converts an integer to a string.
+ * _itoa - A function that converts an integer to a string.
  * @num: The integer.
  * Return: The converted string.
  */
@@ -105,7 +105,7 @@ int forktime(char **command, char *thePath)
 }
 
 /**
- * cleanstr - removes newline chars from user input
+ * cleanstr - A function that removes newline chars from user input
  * @line: user input line
  * Return: always 0
  */
@@ -125,7 +125,7 @@ int cleanstr(char *line)
 }
 
 /**
- * num_len - Counts the digit length of a number.
+ * num_len - A function that counts the digit length of a number.
  * @num: The number to measure.
  * Return: The digit length.
  */
