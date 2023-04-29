@@ -74,7 +74,7 @@ void free_exit(char *line)
  */
 void sig_stop(int sNum)
 {
-	char *sigMsg = "\nWhat is dead may never die...";
+	char *sigMsg = "\nShell let me slepp please";
 
 	(void)sNum;
 	write(STDOUT_FILENO, sigMsg, _strlen(sigMsg));
