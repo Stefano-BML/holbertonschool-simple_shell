@@ -5,7 +5,7 @@ char **path_tok(char *path);
 char *check_paths(char *command);
 
 /**
- * path_locate - yoinks path from env
+ * path_locate - is a function that yoinks path from env
  * @envvar: env var array in
  * Return: array of path strs
  */
@@ -13,14 +13,13 @@ char **path_locate(char *envvar)
 {
 	unsigned int i = 0;
 
-	/* check that suitable environment exists */
 	if (!environ)
 		return (NULL);
 	if (!(*environ))
 		return (NULL);
 	if (!(**environ))
 		return (NULL);
-	/* search environmental vars for PATH */
+	
 	for (; environ[i]; i++)
 	{
 		if (_strncmp(envvar, environ[i], _strlen(envvar)) == 0)
@@ -33,7 +32,7 @@ char **path_locate(char *envvar)
 }
 
 /**
- * path_tok - supplies path info to tokenizer
+ * path_tok - is a function that supplies path info to tokenizer
  * @path: PATH from inherited env
  * Return: tokenized PATH
  */
@@ -42,7 +41,6 @@ char **path_tok(char *path)
 	char *separator = ":";
 
 	pathArr = tokstr(path, separator);
-	/* move pointer past PATH= component of str */
 	pathArr[0] += 5;
 	return (pathArr);
 }
@@ -58,15 +56,14 @@ char *check_paths(char *command)
 	struct stat s;
 	char *cmpPath = NULL;
 
-	/* check if command supplied contained valid path */
 	if (stat(command, &s) == 0)
 		return (command);
-	/* create tokenized path array from env PATH var */
+	
 	pathArr = path_locate("PATH=");
-	/* check that path array was populated */
+	
 	if (!pathArr)
 		return (command);
-	/* cat path array w/ command supplied and check validity */
+
 	if (command[0] != '/' && command[0] != '.')
 	{
 		for (; pathArr[i]; i++)
