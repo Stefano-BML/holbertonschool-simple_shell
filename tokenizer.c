@@ -5,7 +5,7 @@ char **tokstr(char *line, char *delims);
 int substrLen(char *str, char *delims);
 
 /**
- * tok_num - calcs num of toks in str
+ * tok_num - function thats calcs num of toks in str
  * @str: string to tokenize
  * @delims: delims to tokenize based on
  * Return: num of tokens in overall str
@@ -27,7 +27,7 @@ int tok_num(char *str, char *delims)
 }
 
 /**
- * substrLen - computes length of substr / token
+ * substrLen - function that computes length of substr / token
  * @str: string in question
  * @delims: delims to tok based on
  * Return: length of substr
@@ -44,7 +44,7 @@ int substrLen(char *str, char *delims)
 }
 
 /**
- * tokstr - tokenizes str into substrs
+ * tokstr - function that tokenizes str into substrs
  * @line: str to tokenize
  * @delims: delim to tokenize based on
  * Return: token array
