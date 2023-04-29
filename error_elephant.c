@@ -3,7 +3,7 @@
 void errorHand(int eNum, char *arg, char *pName);
 
 /**
- * errorHand - handles errors
+ * errorHand - funtion that control the handle errors
  * @lNum: historic line num
  * @arg: error arg
  * @pName: program name
