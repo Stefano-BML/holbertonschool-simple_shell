@@ -25,7 +25,7 @@ extern char **pathArr;
 extern char **environ;
 
 /**
- * struct builtIn_s - struct used to call builtIn funs
+ * struct builtIn_s - Is a struct used to call builtIn funs
  * @fun: function name string
  * @f: int function pointer
  *
