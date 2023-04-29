@@ -36,7 +36,7 @@ int runBuiltIn(char **command, char *line)
 }
 
 /**
- * hey_exit - built in exit for shell program
+ * hey_exit - A funciton that built in exit for shell program
  * @command: array of strings containing command and args
  * Return: exit status of last command
  */
@@ -49,7 +49,7 @@ int hey_exit(char **command)
 }
 
 /**
- * hey_env - built in function to print local env
+ * hey_env - A function that built in function to print local env
  * @command: array of strings containing command and args
  * Return: -1 on bad magic 0 otherwise
  */
