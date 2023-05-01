@@ -11,6 +11,7 @@ int num_len(int num);
  * @input: user input to be tokenized
  * Return: array of strings cont. command and args
  */
+
 char **get_input(char *input)
 {
 	char **command;
@@ -25,6 +26,7 @@ char **get_input(char *input)
  * @num: The integer.
  * Return: The converted string.
  */
+
 char *_itoa(int num)
 {
 	char *buffer;
@@ -63,6 +65,7 @@ char *_itoa(int num)
  * @thePath: sanitized path ready to spawn bbs
  * Return: always zero (0) success
  */
+
 int forktime(char **command, char *thePath)
 {
 	pid_t child_pid;
@@ -109,6 +112,7 @@ int forktime(char **command, char *thePath)
  * @line: user input line
  * Return: always 0
  */
+
 int cleanstr(char *line)
 {
 	int i = 0;
@@ -129,6 +133,7 @@ int cleanstr(char *line)
  * @num: The number to measure.
  * Return: The digit length.
  */
+
 int num_len(int num)
 {
 	unsigned int num1;
