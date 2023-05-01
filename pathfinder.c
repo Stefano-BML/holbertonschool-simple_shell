@@ -9,6 +9,7 @@ char *check_paths(char *command);
  * @envvar: env var array in
  * Return: array of path strs
  */
+
 char **path_locate(char *envvar)
 {
 	unsigned int i = 0;
@@ -50,6 +51,7 @@ char **path_tok(char *path)
  * @command: first tok of command array
  * Return: composite path to command if one exists
  */
+
 char *check_paths(char *command)
 {
 	unsigned int i = 0, pathLen = 0;
