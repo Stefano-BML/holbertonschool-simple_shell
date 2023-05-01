@@ -10,6 +10,7 @@ void sig_stop(int sNum);
  * @tokens: array of str tokens
  * Return: void
  */
+
 void free_tokens(char **tokens)
 {
 	unsigned int i = 0;
@@ -26,6 +27,7 @@ void free_tokens(char **tokens)
  * @paths: array of path toks
  * Return: void
  */
+
 void free_path(char **paths)
 {
 	unsigned int i = 0;
@@ -59,6 +61,7 @@ void free_env(void)
  * @line: input line
  * Return: void
  */
+
 void free_exit(char *line)
 {
 	free(line);
@@ -72,6 +75,7 @@ void free_exit(char *line)
  * @sNum: signal number
  * Return: void
  */
+
 void sig_stop(int sNum)
 {
 	char *sigMsg = "\nShell let me slepp please";
