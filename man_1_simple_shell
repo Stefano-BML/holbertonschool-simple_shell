@@ -76,20 +76,6 @@ Alternatively, an input of end-of-file (\fBCtrl+d\fR) will exit the program.
 .B Shellby Builtin Commands
 .in +2n
 
-.RS
-.B cd
-.RS
-Usage: .B cd [DIRECTORY]
-
-Changes the current directory of the process to \fBDIRECTORY\fR.
-
-If no argument is given, the command is interpreted as \fBcd $HOME\fR.
-
-If the argument \fB-\fR is given, the command is interpreted as \fBcd $OLDPWD\fR.
-
-The environment variables \fBPWD\fR and \fBOLDPWD\fR are updated after a change of directory.
-.RE
-
 .B exit
 .RS
 Usage: \fBexit [STATUS]\fR
