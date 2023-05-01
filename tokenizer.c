@@ -10,6 +10,7 @@ int substrLen(char *str, char *delims);
  * @delims: delims to tokenize based on
  * Return: num of tokens in overall str
  */
+
 int tok_num(char *str, char *delims)
 {
 	int tokTotal = 0, i, lineLen = 0;
@@ -32,6 +33,7 @@ int tok_num(char *str, char *delims)
  * @delims: delims to tok based on
  * Return: length of substr
  */
+
 int substrLen(char *str, char *delims)
 {
 	int i = 0;
@@ -49,6 +51,7 @@ int substrLen(char *str, char *delims)
  * @delims: delim to tokenize based on
  * Return: token array
  */
+
 char **tokstr(char *line, char *delims)
 {
 	char **tokenStorage;
