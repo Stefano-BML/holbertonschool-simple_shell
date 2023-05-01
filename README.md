@@ -53,7 +53,7 @@ Non-Interactive Mode
 echo "ls -l" | ./hsh
 ```
 
-###Interactive Mode
+Interactive Mode
 
 ```
 (your_terminal)$ ./hsh
