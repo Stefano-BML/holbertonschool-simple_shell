@@ -37,9 +37,9 @@ OS: Ubuntu 14.04 LTS
 Compiler: gcc 4.8.4
 Style Guidelines: Betyy style
 
-###Installation, compilation, usage
+Installation, compilation, usage
 
-###Install and Compile
+Install and Compile
 
 ```
 (your_terminal)$ git clone https://github.com/Julia-5534/holbertonschool-simple-shell.git
@@ -47,7 +47,7 @@ Style Guidelines: Betyy style
 (your_terminal)$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 ```
 
-###Non-Interactive Mode
+Non-Interactive Mode
 
 ```
 echo "ls -l" | ./hsh
