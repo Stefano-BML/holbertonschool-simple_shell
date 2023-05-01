@@ -18,10 +18,13 @@ int main(int argc, char *argv[])
 	char *line = NULL, *thePath = NULL, **command = NULL;
 	size_t llen;
 
+
 	signal(SIGINT, sig_stop);
 	pName = argv[0];
+
 	if (argc != 1)
 		exit(EXIT_FAILURE);
+
 	while (1)
 	{
 		hist++;
