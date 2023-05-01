@@ -176,32 +176,6 @@ $ ^C
 $
 ```
 
-## Shellby Builtin Commands :file_folder:
-
-### cd
-
-+ Usage: `cd [DIRECTORY]`
-+ Changes the current directory of the process to `DIRECTORY`.
-+ If no argument is given, the command is interpreted as `cd $HOME`.
-+ If the argument `-` is given, the command is interpreted as cd $OLDPWD and the pathname of the new working directory is printed to standad output.
-+ If the argument, `--` is given, the command is interpreted as cd $OLDPWD but the pathname of the new working directory is not printed.
-+ The environment variables `PWD` and `OLDPWD` are updated after a change of directory.
-
-Example:
-
-```
-$ ./hsh
-$ pwd
-/home/vagrant/holberton/simple_shell
-$ cd ../
-$ pwd
-/home/vagrant/holberton
-$ cd -
-$ pwd
-/home/vagrant/holberton/simple_shell
-
-```
-
 ### exit
 
 + Usage: `exit [STATUS]`
