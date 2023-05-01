@@ -4,6 +4,33 @@
 
 > **HSH** is our tool (command) that will help you to follow our navigation, hsh interprets what you put in the stdinput and tries to execute it depending on the command you have used. Remember to read our instructions and what commands can be used in hsh.
 
+
+### EXAMPLES
+
+Intended to be compiled with the follwing command:
+
+```
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+```
+
+Once compiled, this shell program can be run in interactive mode by running:
+
+```
+./hsh
+```
+
+Or non-interactive mode, with commands such as:
+
+```
+echo -e "ls -a \npwd\n" | -/hsh
+```
+
+Alternatively, if a know desired command sequence exists, it can be indirectly run from file with:
+
+```
+cat {{file_name_here}} | . /hsh
+```
+
 ### How to invoke hsh? :alien:
 
 usage: **hsh** `[filename]`
