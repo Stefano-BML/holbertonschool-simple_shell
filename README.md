@@ -159,7 +159,7 @@ After receiving a command, **hsh** tokenizes it into words using `" "` as a deli
 
 > hsh returns the exit status of the last command executed, with zero indicating success and non-zero indicating failure.
 
-> If a command is not found, the return status is `8`; if a command is found but is not executable, the return status is `24`.
+> If a command is not found, the return status is `127`; if a command is found but is not executable, the return status is `126`.
 
 > All builtins return zero on success and one or two on incorrect usage (indicated by a corresponding error message).
 
