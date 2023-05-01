@@ -9,6 +9,7 @@ void errorHand(int eNum, char *arg, char *pName);
  * @pName: program name
  * Return: void, prints error to SE
  */
+
 void errorHand(int lNum, char *arg, char *pName)
 {
 	unsigned int eLen = 0;
