@@ -12,6 +12,7 @@ int _strcmp(char *s1, char *s2);
  * @src: smol string input
  * Return: big string
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int i = 0, j = 0;
@@ -54,6 +55,7 @@ char *_strcpy(char *dest, char *src)
  * @s: string input
  * Return: string length
  */
+
 int _strlen(char *s)
 {
 	int a = 0;
@@ -98,6 +100,7 @@ int _strncmp(char *s1, char *s2, int n)
  * @s2: second string
  * Return: first dif
  */
+
 int _strcmp(char *s1, char *s2)
 {
 	int i = 0, dif = 0;
