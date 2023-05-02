@@ -6,7 +6,7 @@ int hist = 0;
 char *pName;
 
 /**
- * main -  A function that entry point for the shell programs
+ * main - function that entry point for the shell programs
  * @argc: Number of arguments passed to the program
  * @argv: Array of arguments passed to the program
  *
