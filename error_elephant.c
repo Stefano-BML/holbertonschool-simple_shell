@@ -7,7 +7,7 @@ void errorHand(int eNum, char *arg, char *pName);
  * @lNum: historic line num
  * @arg: error arg
  * @pName: program name
- * Return: void, prints error to SE
+ * Return: void, prints error to see
  */
 
 void errorHand(int lNum, char *arg, char *pName)
