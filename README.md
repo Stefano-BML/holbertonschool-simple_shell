@@ -44,9 +44,8 @@ Installation, compilation, usage
 
 Install and Compile
 
-```
-(your_terminal)$ git clone https://github.com/Julia-5534/holbertonschool-simple-shell.git
-(your_terminal)$ cd holbertonschool-simple-shell
+``(your_terminal)$ git clone https://github.com/stefano_ml/holbertonschool-simple-shell.git
+(your_terminal)$ git clone https://github.com/stefano_ml/holbertonschool-simple-shell.git
 (your_terminal)$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 ```
 
