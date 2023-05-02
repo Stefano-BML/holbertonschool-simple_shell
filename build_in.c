@@ -50,7 +50,7 @@ int hey_exit(char **command)
 }
 
 /**
- * hey_env - A function that built in function to print local env.
+ * hey_env - function that built in function to print local env.
  * @command: array of strings containing command and args
  * Return: -1 on bad magic 0 otherwise
  */
