@@ -4,6 +4,9 @@
 
 > **HSH** is our tool (command) that will help you to follow our navigation, hsh interprets what you put in the stdinput and tries to execute it depending on the command you have used. Remember to read our instructions and what commands can be used in hsh.
 
+<p align="center">
+  <img src="imagen.jpeg" width="400\"/>
+</p>
 
 ### EXAMPLES
 
