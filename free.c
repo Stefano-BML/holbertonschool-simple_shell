@@ -71,7 +71,7 @@ void free_exit(char *line)
 }
 
 /**
- * sig_stop - stops signal
+ * sig_stop - stops signals
  * @sNum: signal number
  * Return: void
  */
