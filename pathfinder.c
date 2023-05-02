@@ -33,7 +33,7 @@ char **path_locate(char *envvar)
 }
 
 /**
- * path_tok - is a function that supplies path info to tokenizer
+ * path_tok - is a function that supplies path infomation to tokenizer
  * @path: PATH from inherited env
  * Return: tokenized PATH
  */
