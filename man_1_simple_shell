@@ -1,4 +1,4 @@
-.TH HSH 3 "20 APRIL 2023" "0.1" "SIMPLE_SHELL_HSH man page"
+.TH HSH 3 "01 MAY 2023" "0.2" "SIMPLE_SHELL_HSH man page"
 .SH NAME
 hsh \- Simple UNIX command interpreter
 .SH SYNOPSIS
