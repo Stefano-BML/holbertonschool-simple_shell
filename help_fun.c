@@ -129,7 +129,7 @@ int cleanstr(char *line)
 }
 
 /**
- * num_len - A function that counts the digit length of a number.
+ * num_len - A function that counts the digits length of a number.
  * @num: The number to measure.
  * Return: The digit length.
  */
