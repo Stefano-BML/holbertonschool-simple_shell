@@ -99,54 +99,6 @@ $ ./hsh ruben
 'holberton'
 $
 ```
-
-## Environment :sparkles:
-
-When **"hsh"** is called, it copies the environment of the parent process in which it was executed. This environment is a collection of name-value pairs represented as strings in the format `NAME=VALUE`, describing various variables. Some important environmental variables include:
-
-### HOME
-
-The home directory of the current user and the default directory argument for the **cd** builtin command.
-
-check out :eyes:
-
-```
-$ echo "echo $HOME" | ./hsh
-/home/vagrant
-```
-
-### PWD
-
-The current working directory as set by the **cd** command.
-
-check out :eyes:
-
-```
-$ echo "echo $PWD" | ./hsh
-/home/vagrant/holberton/simple_shell
-```
-
-### OLDPWD
-
-The previous working directory as set by the cd command.
-
-check out :eyes:
-
-```
-$ echo "echo $OLDPWD" | ./hsh
-/home/vagrant/holberton/printf
-```
-### PATH
-
-The shell searches for commands in a list of directories separated by colons. A null directory name in the path is indicated by two adjacent colons, an initial colon, or a trailing colon, and represents the current directory.
-
-check out :eyes:
-
-```
-$ echo "echo $PATH" | ./hsh
-/home/vagrant/.cargo/bin:/home/vagrant/.local/bin:/home/vagrant/.rbenv/plugins/ruby-build/bin:/home/vagrant/.rbenv/shims:/home/vagrant/.rbenv/bin:/home/vagrant/.nvm/versions/node/v10.15.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/vagrant/.cargo/bin:/home/vagrant/workflow:/home/vagrant/.local/bin
-```
-
 ## Command Execution :white_check_mark:
 
 After receiving a command, **hsh** tokenizes it into words using `" "` as a delimiter. The first word is considered the command and all remaining words are considered arguments to that command. **hsh** then proceeds with the following actions:
@@ -189,6 +141,20 @@ example:
 $ ./hsh
 $ exit
 normal shell ~
+```
+
+### env
+
++ Usage: env
++ Prints the current environment.
+
+example:
+
+```
+$ ./hsh
+$ env
+NVM_DIR=/home/vagrant/.nvm
+...
 ```
 
 ## Authors :
