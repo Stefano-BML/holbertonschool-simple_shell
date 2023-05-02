@@ -5,7 +5,7 @@ char **path_tok(char *path);
 char *check_paths(char *command);
 
 /**
- * path_locate - is a function that yoinks path from env
+ * path_locate - is a function that yoink path from env
  * @envvar: env var array in
  * Return: array of path strs
  */
