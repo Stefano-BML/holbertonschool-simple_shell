@@ -71,7 +71,7 @@ int _strlen(char *s)
  * _strncmp - function that compares strings up to n chars
  * @s1: first string
  * @s2: second string
- * @n: num of chars to compare
+ * @n: num of chars to compares
  * Return: first dif or 0 if none
  */
 int _strncmp(char *s1, char *s2, int n)
