@@ -95,7 +95,7 @@ int _strncmp(char *s1, char *s2, int n)
 }
 
 /**
- * _strcmp - function that compares strings ASCII values
+ * _strcmp - function that compares string ASCII values
  * @s1: first string
  * @s2: second string
  * Return: first dif
