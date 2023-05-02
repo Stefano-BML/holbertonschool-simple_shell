@@ -54,7 +54,7 @@ int tok_num(char *str, char *delims);
 char **tokstr(char *line, char *delims);
 int substrLen(char *str, char *delims);
 
-/* defined in freedom.c */
+/* defined in free.c */
 void free_tokens(char **tokens);
 void free_path(char **paths);
 void free_env(void);
